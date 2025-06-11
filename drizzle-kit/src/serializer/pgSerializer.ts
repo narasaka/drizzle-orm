@@ -1485,7 +1485,7 @@ WHERE
 							// .replace("timestamp without time zone", "timestamp")
 							.replace('character', 'char');
 
-						columnTypeMapped = trimChar(columnTypeMapped, '"');
+						columnTypeMapped = trimChar(columnTypeMapped, '"').toLowerCase();
 
 						columnToReturn[columnName] = {
 							name: columnName,
@@ -1780,7 +1780,7 @@ WHERE
 							// .replace("timestamp without time zone", "timestamp")
 							.replace('character', 'char');
 
-						columnTypeMapped = trimChar(columnTypeMapped, '"');
+						columnTypeMapped = trimChar(columnTypeMapped, '"').toLowerCase();
 
 						columnToReturn[columnName] = {
 							name: columnName,
